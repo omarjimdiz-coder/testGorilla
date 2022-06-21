@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Test gorilla</h1>
+
+
+
+    <script>
+
+        //Comprobar si es los elementos del array son divisibles con 11
+        //primer array [0, 11, 22, 33, 44]
+
+        function test(my_list){
+            var response = [];
+
+            for (let i = 0; i < my_list.length; i++) {
+                const element = my_list[i];
+
+                if(element % 11 == 0) response.push(true);
+                else if(!element % 11 ) response.push(false);
+    
+            }
+            
+            return ("El numero de elementos que tienen como residuo 0 de 11 son: " + response.length);
+        }
+
+        //Puedes comprobar si el arraglo hace hace el conteo de los elementos que su residuo de con 11 es 0
+        console.log(test([0, 11, 22, 33, 44, 66]));
+
+    
+    </script>
+</body>
+</html>
